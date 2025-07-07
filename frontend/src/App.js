@@ -29,7 +29,7 @@ function App() {
   const getProducts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://basak-selin-agan.onrender.com");
+      const response = await axios.get("https://basak-selin-agan.onrender.com/rings");
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products", error);
