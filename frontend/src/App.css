@@ -1,0 +1,102 @@
+.App {
+  font-family: "Avenir", sans-serif;
+
+  padding: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  position: relative;
+}
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.product-card {
+  flex: 0 0 calc(25% - 10px);
+  max-width: calc(25% - 40px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Avenir", sans-serif;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: medium;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #000;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.color-button.yellow {
+  background-color: #e6ca97;
+}
+
+.color-button.white {
+  background-color: #d9d9d9;
+}
+
+.color-button.rose {
+  background-color: #e1a4a9;
+}
+
+.color-button.active {
+  border: 2px solid black;
+}
+
+.popularity-score {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
